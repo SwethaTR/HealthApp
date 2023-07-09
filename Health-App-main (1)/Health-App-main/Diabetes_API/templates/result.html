@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="../static/img/health.ico">
+        <!-- Bootstrap CSS -->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+        *{
+        margin:0;
+        padding:0;
+        font-family: 'Josefin Sans', sans-serif;
+        }
+        html,
+        body,
+        header,
+        #intro {
+        height: 100%;
+        background-color: rgb(59, 58, 58);
+        }
+        img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        }
+        h1{
+          text-align: center;
+            color: white;
+        }
+        </style>
+        <title>Diabetes Prediction</title>
+      </head>
+   <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Health App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/Heart_API/templates/heart.html">Heart Disease<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/Kidney_API//templates/kidney.html">Kidney Disease</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/Diabetes_API/templates/diabetes.html">Diabetes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/Liver_API/templates/liver.html">Liver Diease</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/Breast_Cancer_API/templates/cancer.html">Cancer</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br><br>
+       <centre><h1> {{ prediction_text }}</h1></centre>
+   </body>
+</html>
